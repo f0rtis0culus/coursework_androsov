@@ -12,17 +12,16 @@
     <name>hotel-booking</name>
     <description>Hotel Booking Backend with Spring Boot</description>
 
-    <properties>
-        <java.version>21</java.version>
-        <spring-boot.version>3.2.4</spring-boot.version>
-    </properties>
-
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.4</version>
         <relativePath/>
     </parent>
+
+    <properties>
+        <java.version>21</java.version>
+    </properties>
 
     <dependencies>
         <!-- Spring Boot Web -->
@@ -69,7 +68,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- Crypto for password hashing -->
+        <!-- Crypto -->
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-crypto</artifactId>
@@ -81,36 +80,43 @@
             <artifactId>jakarta.validation-api</artifactId>
         </dependency>
 
-        <!-- Lombok (удобно, но не обязательно) -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
         </dependency>
 
-        <!-- Тесты -->
+        <!-- Testing -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
 
+        <!-- Logstash -->
         <dependency>
             <groupId>net.logstash.logback</groupId>
             <artifactId>logstash-logback-encoder</artifactId>
             <version>7.4</version>
         </dependency>
-
     </dependencies>
 
     <build>
         <plugins>
-            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
         </plugins>
     </build>
 
 </project>
+
