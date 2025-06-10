@@ -1,14 +1,11 @@
-FROM maven:3.9.6-eclipse-temurin-21 AS build
+FROM eclipse-temurin:17-jdk-alpine
 
 WORKDIR /app
 
-COPY pom.xml .
-COPY .mvn/ .mvn/
-COPY src ./src
+COPY . .
 
-RUN mvn dependency:go-offline
-RUN mvn package -DskipTests
+RUN ./mvnw clean package -DskipTests
 
 EXPOSE 8080
 
-CMD ["java", "-jar", "target/hotel-booking-1.0.0.jar"]
+CMD ["java", "-jar", "target/*.jar"]
