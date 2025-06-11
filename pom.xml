@@ -9,7 +9,7 @@
     <version>1.0.0</version>
     <packaging>jar</packaging>
 
-    <name>hotel-booking</name>
+    <name>coworkingbooking</name>
     <description>Hotel Booking Backend with Spring Boot</description>
 
     <properties>
@@ -101,9 +101,13 @@
                 <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.example.coworkingbooking.CoworkingBookingApplication</mainClass>
+                    <layers>
+                        <enabled>false</enabled>
+                    </layers>
                 </configuration>
             </plugin>
         </plugins>
     </build>
+
 
 </project>
