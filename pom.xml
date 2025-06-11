@@ -4,24 +4,25 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <groupId>com.example</groupId>
+    <artifactId>coworkingbooking</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <name>hotel-booking</name>
+    <description>Hotel Booking Backend with Spring Boot</description>
+
+    <properties>
+        <java.version>21</java.version>
+        <spring-boot.version>3.2.4</spring-boot.version>
+    </properties>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.4</version>
         <relativePath/>
     </parent>
-
-    <groupId>com.example</groupId>
-    <artifactId>coworking-booking</artifactId>
-    <version>1.0.0</version>
-    <packaging>jar</packaging>
-
-    <name>coworking-booking</name>
-    <description>Spring Boot App</description>
-
-    <properties>
-        <java.version>21</java.version>
-    </properties>
 
     <dependencies>
         <dependency>
@@ -97,6 +98,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
                 <configuration>
                     <mainClass>com.example.coworkingbooking.CoworkingBookingApplication</mainClass>
                 </configuration>

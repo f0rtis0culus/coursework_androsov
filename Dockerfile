@@ -1,14 +1,15 @@
-FROM eclipse-temurin:17-jdk-alpine
+FM eclipse-temurin:17-jdk-alpine
 
-WORKDIR /app
+ WORKDIR /app
 
-COPY . .
+ COPY . .
 
-RUN chmod +x ./mvnw
+ RUN chmod +x ./mvnw
 
-RUN ./mvnw clean package -DskipTests
+ RUN ./mvnw clean package -DskipTests
 
-EXPOSE 8080
+ EXPOSE 8080
 
-CMD ["java", "-jar", "./target/coworking-booking-1.0.0.jar"]
+CMD ["java", "-jar", "target/coworkingbooking-1.0.0.jar"]
+
 
