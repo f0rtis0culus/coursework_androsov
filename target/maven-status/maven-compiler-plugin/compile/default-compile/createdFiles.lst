@@ -8,8 +8,10 @@ com\example\coworkingbooking\entities\Facility.class
 com\example\coworkingbooking\entities\Workspace.class
 com\example\coworkingbooking\entities\Booking.class
 com\example\coworkingbooking\security\JwtUtil.class
+com\example\coworkingbooking\entities\Payment.class
 com\example\coworkingbooking\controllers\RoomController.class
 com\example\coworkingbooking\controllers\AuthController.class
 com\example\coworkingbooking\entities\Room.class
 com\example\coworkingbooking\repositories\WorkspaceRepository.class
 com\example\coworkingbooking\services\AuthService.class
+com\example\coworkingbooking\services\BookingService.class
