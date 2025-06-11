@@ -1,0 +1,15 @@
+com\example\coworkingbooking\repositories\UserRepository.class
+com\example\coworkingbooking\repositories\BookingRepository.class
+com\example\coworkingbooking\repositories\RoomRepository.class
+com\example\coworkingbooking\controllers\BookingController.class
+com\example\coworkingbooking\entities\User.class
+com\example\coworkingbooking\dto\AuthRequest.class
+com\example\coworkingbooking\entities\Facility.class
+com\example\coworkingbooking\entities\Workspace.class
+com\example\coworkingbooking\entities\Booking.class
+com\example\coworkingbooking\security\JwtUtil.class
+com\example\coworkingbooking\controllers\RoomController.class
+com\example\coworkingbooking\controllers\AuthController.class
+com\example\coworkingbooking\entities\Room.class
+com\example\coworkingbooking\repositories\WorkspaceRepository.class
+com\example\coworkingbooking\services\AuthService.class
